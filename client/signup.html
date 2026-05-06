@@ -11,13 +11,16 @@
 
     <h1>signup</h1>
     <div style="margin-left: 40%;">
-        <form action="" method="post">
-            <label for="">name </label><input type="name" placeholder="name"><br>
-            <label for="">email</label><input type="email" placeholder="emil"><br>
-            <label for="">password</label><input type="password" placeholder="password"><br>
+        <form action="" onsubmit="signup(event)">
+            <label for="">name </label><input type="name" placeholder="name" id="name"><br><br>
+            <label for="">email</label><input type="email" placeholder="emil" id="email"><br><br>
+            <label for="">password</label><input type="password" placeholder="password" id="pass"><br><br>
+            <button style="background-color: blue; height: 20px;width: 200px;">signup</button>
+
         </form>
-        <button style="background-color: blue; height: 50px;width: 200px;">signup</button>
     </div>
+   <script src="./signup.js"></script>
+
 </body>
 
 </html>
