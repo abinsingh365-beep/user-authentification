@@ -1,4 +1,5 @@
 async function signup() {
+    try{
     event.preventDefault();
     console.log("reached here...");
 
@@ -17,12 +18,12 @@ async function signup() {
 
 
 
-    try{
+    
         
     
     
 
-    let response = await fetch("api/auth/sign-up", {
+    let response = await fetch ("http://localhost:3000/api/auth/sign-up", {
         method: "POST",
         headers: {
             "content type ": "application/json",
